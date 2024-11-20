@@ -1,0 +1,143 @@
+:root {
+  --black-color: #171717;
+  --blackgrey-color: #252525;
+  --blue-color: #1B72E8;
+  --bluelight-color: #66A2F0;
+  --grey-color: #555555;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--black-color);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bigcircleElement {
+  width: 175px;
+  aspect-ratio: 1/1;
+  border: solid 1px var(--grey-color);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hovercircle {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.centercircle {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-color: var(--bluelight-color);
+  border-radius: 50%;
+  position:relative;
+}
+.square {
+  position:absolute;
+  width: 50px;
+  aspect-ratio: 1/1;
+  border:solid 1px var(--grey-color);
+}
+.circleforturn {
+  position:absolute;
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  margin-left:1px;
+  margin-top:1px;
+}
+#circle1 {
+  transform: rotate(-45deg) translateX(65px) rotate(-45deg);
+}
+#circle2 {
+  transform: rotate(135deg) translateX(65px) rotate(45deg);
+}
+/* 2eme elements */
+#hovercircle2 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.centercircle2 {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  position:relative;
+}
+.circleblue {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: var(--blue-color);
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 1px;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: inset 0 0 0 0.1px white, 0 0 10px rgba(255, 255, 255, 0.2);
+}
+#circle3 {
+  transform: rotate(-45deg) translateX(65px) rotate(45deg);
+}
+#circle4 {
+  transform: rotate(45deg) translateX(65px) rotate(45deg);
+  z-index: 4;
+}
+#circle5 {
+  transform: rotate(-135deg) translateX(65px) rotate(45deg);
+  z-index: 3;
+}
+#circle6 {
+  transform: rotate(135deg) translateX(65px) rotate(45deg);
+}
+.circlebluelight {
+  width: 73%;
+  aspect-ratio: 1/1;
+  background-color: var(--bluelight-color);
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 1px;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: inset 0 0 0 0.1px white, 0 0 10px rgba(255, 255, 255, 0.2);
+}
+#circle7 {
+  transform: rotate(-80deg) translateX(40px) rotate(45deg);
+}
+#circle10 {
+  transform: rotate(83deg) translateX(52px) rotate(45deg);
+}
+.smallcircleblue {
+  width: 73%;
+  aspect-ratio: 1/1;
+  background-color: var(--blue-color);
+  position: absolute;
+  margin-left: 1px;
+  margin-top: 1px;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: inset 0 0 0 0.1px white, 0 0 10px rgba(255, 255, 255, 0.2);
+}
+#circle8 {
+  transform: rotate(7deg) translateX(52px) rotate(45deg);
+}
+#circle9 {
+  transform: rotate(-189deg) translateX(41px) rotate(45deg);
+}
+/* Arrete les interaction : */
+.no-hover {
+  pointer-events: none; /* Empêche toute interaction */
+}
