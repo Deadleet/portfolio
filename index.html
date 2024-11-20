@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Thomas GUERIN - Création de site internet - portfolio - Marseille</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!---->
+  <!-- Metadonnées pour les moteurs de recherche -->
+  <meta name="robots" content="index, follow"> <!-- Permet aux robots d'indexer et de suivre les liens de la page -->
+  <meta name="author" content="Thomas GUERIN">
+  <meta name="keywords" content="developpement web, application web, site web, confiance, performance, partenaire, Ruby On Rails, Next js, React">
+  <!-- Opengraph pour les réseaux sociaux -->
+  <meta property="og:title" content="PortFolio Thomas GUERIN">
+  <meta property="og:description" content="Venez découvrir mon portfolio. Et faites-nous confiance pour prendre en main vos projets web. Du site vitrine à l'application métier. Nous pourrons répondre à vos besoins.">
+  <meta property="og:image" content="https://www.portfoliothomasguerin.site/assets/deco1.jpg">
+  <meta property="og:url" content="https://www.portfoliothomasguerin.site/">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card pour Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PortFolio Thomas GUERIN">
+  <meta name="twitter:description" content="Venez découvrir mon portfolio. Et faite nous confiance pour prendreen main vos projets web">
+  <meta name="twitter:image" content="https://www.portfoliothomasguerin.site/assets/deco1.jpg">
+  <!---->
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="DoH91UW6zS9jyFlYWUUfUjyfMrNytVDObwCUDO0ReYhwhvmTCl7CD2sqkQa7oinApU3RuVz_X4n2BkpohCmSNA" />
+  <link rel="icon" type="image/x-icon" href="/assets/icons8-code-32.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css"><meta name="description" content="Portfolio pour présenter le travaille et l'activité de Thomas GUERIN.">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#name">
+        <img src="./assets/CG-28.png" />
+    </a> <input type="checkbox" id="check">
+    <label for="check" class="icons">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.9rem" id="menu-icon" viewBox="0 0 448 512">
+            <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                fill="#FEECD1" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.9rem" id="close-icon" viewBox="0 0 384 512">
+            <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                fill="#FEECD1" />
+        </svg>
+    </label>
+    <nav id="navbar" class="navbar">
+        <a id="nav-histoire-link" style="--i:0" class="txt txt-company navlink monBouton" onclick="closenavbar()"
+            href="#qui_suis_je">Qui suis-je ?</a>
+        <a id="nav-portfolio" style="--i:1" class="navlink monBouton" onclick="closenavbar()"
+            href="#projets">Projets</a>
+        <a id="nav-formation" style="--i:2" class="navlink monBouton" onclick="closenavbar()"
+            href="#solutions">Solutions</a>
+            <a id="nav-contact" style="--i:3" class="navlink monBouton" onclick="closenavbar()"
+            href="#langage">Langage & Framework</a>
+        <a id="nav-contact" style="--i:4" class="navlink monBouton" onclick="closenavbar()"
+            href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="background-home">
+      <section id="name">
+        <div class="card-height-100vh" style="--optionBackground: url('assets/background-6.jpg')">
+          <div class="container-center height100vh">
+            <div>
+              <div class="left-div"></div>
+              <!-- Ajout de la div à gauche -->
+              <div class="zone-text-appears">
+                <h1 class="white big-font anton-regular margin-0 padding-0 font-line-height-1 text-appears">Thomas GUERIN
+                </h1>
+              </div>
+              <div class="text-right zone-text-appears">
+                <span class="white anton-regular font-size-40px text-appears">Portfolio 2024</span><br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <span class="container-center white anton-regular font-size-24px font-italic text-appears">"Mon savoir faire au service de vos projets"</span>
+              <div class="right-div"></div>
+              <!-- Ajout de la div à droite -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- qui suis je -->
+      <section id="qui_suis_je" class="relative">
+        <!-- <img id="background-img-1" src="assets/test.png" /> -->
+        <div class="dec-navbar"></div>
+        <div class="container-quisuisje">
+          <h2 class="title text-appears">Qui suis-je ?</h2>
+          <div class="cards-who white">
+            <div class="center-image">
+                <img id="img-quisuisje" src="./assets/quisuisje.png" />
+            </div>
+            <div>
+              <p class="text-appears">Passionné par le développement web, je mets en œuvre une approche axée sur la communication transparente, la résilience face aux défis et une sincérité inébranlable. Fort de trois vies professionnelles, j'ai évolué en développant des compétences variées, garantissant une perspective unique pour chaque projet. <br><br> Mes expériences variées dans les domaines scientifique, commercial et de développement se complètent harmonieusement et constituent des atouts essentiels pour la réalisation des projets de mes clients assurant ainsi leur réussite et leur satisfaction.</p>
+            </div>
+            <div class="center-image">
+              <img class="" src="./assets/science.png" />
+            </div>
+            <div>
+              <h3 class="text-appears">VISION SCIENTIFIQUE</h3>
+              <p class="text-appears">Fort d'une formation scientifique solide et de riches expériences pratiques, je maîtrise
+                  l'art d'aborder les défis avec une approche analytique et méthodique. Mon expertise
+                  s'appuie sur une compréhension approfondie des concepts scientifiques, renforcée par une
+                  mise en pratique concrète. Cette combinaison unique me permet d'apporter une vision
+                  professionnelle et proactive à chaque projet, garantissant une résolution efficace des problèmes.</p>
+            </div>
+            <div class="center-image">
+              <img class="" src="./assets/commerce.png" />
+            </div>
+            <div>
+              <h3 class="text-appears">VISION COMMERCIALE</h3>
+              <p class="text-appears">Grâce à mon expertise avérée en gestion de projets complexes, j'ai cultivé une vision stratégique intégrée, harmonisant avec finesse les dimensions opérationnelles et les impératifs commerciaux. De la phase de planification inaugurale à la réalisation ultime, mon engagement total assure une gestion exhaustive de chaque facet du projet. Mon expérience affirme ma capacité à conduire des initiatives avec succès, mettant en lumière mon professionnalisme et mon aptitude à garantir la réussite des missions qui me sont confiées.</p>
+            </div>
+              <div class="center-image">
+                  <img class="" src="./assets/code.png" />
+              </div>
+              <div>
+                  <h3 class="text-appears">VISION DEVELOPPEUR WEB</h3>
+                  <p class="text-appears">En tant que développeur chevronné, ma pratique est imprégnée d'une rigueur exemplaire, forgée par des années d'expérience. Ma maîtrise de la gestion du temps et mon engagement indéfectible envers les échéances témoignent de mon professionnalisme aiguisé. Travaillant de concert au sein d'équipes dynamiques, j'ai pleinement saisi l'importance cruciale de la collaboration et du partage des responsabilités, des éléments clés qui propulsent la réalisation efficace de nos objectifs communs.</p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- projets -->
+      <section>
+        <div id="projets" class="dec-navbar"></div>
+        <div class="container">
+          <h2 class="title text-appears">Mes projets</h2>
+          <div class="cards-projects">
+            <!-- OMWAVE -->
+            <a class="card-pres-projet" href="http://51.38.37.222/thomasgp/omsite/" target="_blank">
+              <img src="./assets/project-omwave.jpg" />
+              <div class="hover-project">
+                <p>Création d'un site vitrine sur mesure sans utilisation de bibliotheque externe</p>
+              </div>
+            </a>
+            <!-- Je phosphore -->
+            <a class="card-pres-projet" href="https://www.jephosphore.com/" target="_blank">
+              <img src="./assets/project-jephosphore.jpg" />
+              <div class="hover-project">
+                <p>Création d'un site vitrine sur mesure avec gestion d'envois de mail et bibliothèque de photo importante</p>
+              </div>
+            </a>
+            <!-- HealthKonnect -->
+            <a class="card-pres-projet" href="https://www.youtube.com/watch?v=_qlWXVGUrLY" target="_blank">
+              <img src="./assets/project-Healthconnect.jpg" />
+              <div class="hover-project">
+                <p>Création d'une application web complexe. Gestion d'utilisateur, stockage/protection de données, gestion des rendez-vous</p>
+              </div>
+            </a>
+            <!-- le wagon -->
+            <a class="card-pres-projet" href="https://www.lewagon.com/fr/web-development-course" target="_blank">
+              <img src="./assets/project-lewagon.jpg" />
+              <div class="hover-project">
+                <p>Formateur au Wagon. Formation des développeurs de demain en frontend (html/css/js) et en backend (ruby/sql)</p>
+              </div>
+            </a>
+            <!-- brizeau -->
+            <a class="card-pres-projet" href="https://www.brizeau.fr/" target="_blank">
+              <img src="./assets/brizeau.png" />
+              <div class="center-div">
+                <h3>Brizeau</h3>
+              </div>
+              <div class="hover-project">
+                <p>Création d'une charte graphique complète logo couleur. Récupération du site Wordpress pour une mise à jour complète du design</p>
+              </div>
+            </a>
+            <!-- l'eclat -->
+            <a class="card-pres-projet" href="https://brasserieleclat.fr/" target="_blank">
+              <img src="./assets/eclat.png" />
+              <div class="center-div">
+                <h3>L'éclat</h3>
+              </div>
+              <div class="hover-project">
+                <p>Création d'une charte graphique complète logo couleur. Accompagnement sur certains éléments design du site web</p>
+              </div>
+            </a>
+            <!-- Atelier rêve d'ailleurs -->
+            <a class="card-pres-projet" href="https://www.atelier-revedailleurs.fr/" target="_blank">
+              <img src="./assets/van_main_img-light.jpg" />
+              <div class="center-div">
+                <h3>Atelier reve d'ailleurs</h3>
+              </div>
+              <div class="hover-project">
+                <p>🚧En cours :🚧 <br> Création d'un site web sur mesure pour une société d'aménagement de van.</p>
+              </div>
+            </a>
+            <!-- aux quatre epis -->
+            <a class="card-pres-projet" href="https://www.ravioli-aux4epis.com/" target="_blank">
+              <img src="./assets/auxquatreepis.png" />
+              <div class="center-div">
+                <h3>Aux Quatre Epis</h3>
+              </div>
+              <div class="hover-project">
+                <p>🚧En cours :🚧 <br> Création d'un site web sur mesure pour une boutique de pastier.</p>
+              </div>
+            </a>
+          </div>
+          <h2 class="title text-appears">Mon laboratoire</h2>
+          <div class="cards-projects">
+            <a class="card-pres-projet" href="/exemples/login.html" target="_blank">
+              <img src="./assets/exemplelogin.png" />
+              <div class="hover-project">
+                <p>Récupération de code et adaptation pour les besoin du client. <br> Exemple : LOGIN</p>
+              </div>
+            </a>
+            <a class="card-pres-projet" href="/exemples/planet.html" target="_blank">
+              <img src="./assets/univers.png" />
+              <div class="hover-project">
+                <p>Création d'un miniunivers autonome avec des rotations infinis</p>
+              </div>
+            </a>
+            <a class="card-pres-projet" href="/exemples/plane.html" target="_blank">
+              <img src="./assets/plane2d.png" />
+              <div class="hover-project">
+                <p>Boucle infini pour localiser certain elements d'une image</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- solutions -->
+      <section>
+        <div class="dec-navbar" id="solutions"></div>
+        <div class="container relative">
+            <div class="cercle-vide"></div>
+            <h2 class="title text-appears">Nos solutions</h2>
+            <div class="cards-solutions">
+                <div class="card-solution">
+                    <div class="img-center">
+                        <img class="img-solution" src="./assets/frontend-solution.png" />
+                    </div>
+                    <div class="container-center">
+                        <div class="text-solution white">
+                            <h3 class="text-appears">Conception de sites vitrines - Approche frontend : </h3>
+                            <p class="text-appears">Je propose la création de sites vitrines alliant simplicité, design percutant et
+                                interactivité optimale. Grâce aux langages HTML, CSS et JavaScript, nous
+                                transformons vos idées en une présence en ligne captivante et professionnelle.
+                                Confiez-nous votre projet et offrez à votre entreprise une vitrine digitale
+                                distinctive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-solution">
+                    <div class="img-margin-left">
+                        <img class="img-solution" src="./assets/backend-solution.png" />
+                    </div>
+                    <div class="container-center">
+                        <div class="text-solution white">
+                            <h3 class="text-appears">Sites complexes et applications web - approche backend : </h3>
+                            <p class="text-appears">L’approche backend permet une interactivité totale, permettant aux utilisateurs
+                                de modifier le contenu sans compétences en codage. Mise en place efficace de
+                                notifications e-mail/SMS, offrant une communication proactive. Notre choix de
+                                langage : Ruby et du Ruby on Rails garantit fiabilité et robustesse, éprouvés
+                                par des plateformes telles qu'Airbnb et GitHub. Unlimited possibilities,
+                                tailored solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-solution">
+                    <div class="img-margin-left">
+                        <img class="img-solution" src="./assets/option-solution.png" />
+                    </div>
+                    <div class="container-center">
+                        <div class="text-solution white">
+                            <h3 class="text-appears">Accompagnement à la création de vos supports : </h3>
+                            <p class="text-appears">Optimisez votre projet avec notre expertise : collaboration efficace, maintenance
+                                simplifiée, maîtrise avec Stimulus JS, lecture de code optimisée, gestion
+                                d'équipe simplifiée avec SASS. Sécurisez vos données avec PostgreSQL, assurez
+                                des modifications précises et une mise en production fluide sur notre serveur
+                                Heroux, avec une tarification flexible. Avec nous, votre projet atteint des
+                                sommets de performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-solution">
+                    <div class="img-center">
+                        <img class="img-solution" src="./assets/futur-solution.png" />
+                    </div>
+                    <div class="container-center">
+                        <div class="text-solution white">
+                            <h3 class="text-appears">Ca arrive bientôt dans nos offres </h3>
+                            <p class="text-appears">Optimisons votre présence en ligne avec une approche design personnalisée,
+                                soutenue par l'accompagnement d'un designer web. Actuellement sur HEROKU, nous
+                                planifions une transition vers nos serveurs pour un coût maîtrisé et une gestion
+                                des risques optimale. Profitez de notre abonnement maintenance et mise à jour
+                                pour une expérience web sans soucis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- langage -->
+      <section>
+        <div class="dec-navbar" id="langage"></div>
+        <div class="container">
+          <h2 class="title text-appears">Langage et Framework</h2>
+            <div class="slider">
+              <div class="slide-track">
+                <div class="slide">
+                  <img src="" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/HTML5.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/CSS3.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/JS.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/scss-sass.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/stimulus.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/Ruby.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/RubyOnRails.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/SQL.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/PostgreSQL.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/HTML5.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/CSS3.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/JS.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/scss-sass.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/stimulus.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/Ruby.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/RubyOnRails.png" height="100" alt="" />
+                </div>
+                <div class="slide">
+                  <img src="/assets/langage/SQL.png" height="100" alt="" />
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section id="contact" class="white">
+        <div class="dec-navbar"></div>
+        <div class="container">
+          <h2 class="title text-appears">Me contacter</h2>
+          <div class="center-div padding-10">
+            <div class="coord">
+              <h3 class="text-appears">Thomas GUERIN</h3>
+              <a class="text-appears" href="tel:+33619732273">06 19 73 22 73</a><br>
+              <a class="text-appears" href="mailto:thomas.guerin@jephosphore.com?subject=Prise%20de%20contact%20Portfolio&body=Bonjour,%0A%0AJe vous contact pour : %0A%0AVotre nom%0ANuméro de téléphone">thomas.guerin@jephosphore.com</a>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+  <script src="./js/closenavbar.js"></script>
+  <script src="/js/textAppears.js"></script>
+</body>
+
+</html>

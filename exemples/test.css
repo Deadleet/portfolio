@@ -1,0 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.window {
+  width: 100%;
+  height: 250vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #df3636, #267730);
+}
+.scroll-window {
+  width:50%;
+  aspect-ratio: 16/9;
+  background-color: rgba(240, 255, 255,0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.text-appears {
+  font-size: 2rem;
+  color: #000;
+  margin: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.text-appears.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}

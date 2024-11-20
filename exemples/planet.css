@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.univers {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(17deg, #2e2e5f, #000000);
+  position: relative;
+}
+.auto-space {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* animation: orbit 1s linear infinite; */
+/* 10s pour une rotation complète, infinite pour la boucle */
+
+#sun {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background: url('https://c0.lestechnophiles.com/www.numerama.com/wp-content/uploads/2023/03/soleil-1024x576.jpg?avif=1&key=236a7e0c');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: orbit 20s linear infinite;
+}
+#earth {
+  width: 50px;
+  aspect-ratio: 1/1;
+  background: url('https://www.larousse.fr/encyclopedie/data/images/1008518-La_Terre.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  left: -65%;
+  animation: orbitearth 10s linear infinite;
+}
+#moon {
+  width: 10px;
+  aspect-ratio: 1/1;
+  background: url('https://img-4.linternaute.com/27eK8rGC0nnKKCGtWS65HiB9oE8=/1500x/smart/0f0f978005864ef39257cac16bacfec5/ccmcms-linternaute/33523985.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: orbitmoon 2s linear infinite;
+}
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+@keyframes orbitearth {
+  from {
+    transform: rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(300px) rotate(-720deg);
+  }
+}
+
+@keyframes orbitmoon {
+  from {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(50px) rotate(360deg);
+  }
+}
